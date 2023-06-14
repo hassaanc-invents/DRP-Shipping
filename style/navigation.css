@@ -246,3 +246,20 @@
   .gtco-footer {
     box-shadow: 0 8px 30px -7px #c9dff0;
   }
+
+  .sector-image{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .bg-custom{
+    background-color: #01b0f8 !important;
+  }
+  .text-custom{
+    color: #01b0f8 !important;
+  }
+
+  a{
+    text-decoration: none;
+  }

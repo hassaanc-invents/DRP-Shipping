@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/navigation.css">
+    <link rel="stylesheet" href="./style/cotact-us.css">
+    <title>Royal Professional</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand nav-a" href="index">Royal Professional</a>
+            <div class="social-media order-lg-last">
+                <p class="mb-0 d-flex">
+                    <a href="#" class="d-flex align-items-center justify-content-center nav-a"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center nav-a"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center nav-a"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center nav-a"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                </p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link nav-a">Home</a></li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link nav-a">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link nav-a">Services</a></li>
+                    <li class="nav-item"><a href="contactus.html" class="nav-link nav-a">Contact</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link nav-a">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="main-conatiner pt-5">
+        <h1 class="display-4 text-muted">Contact Us</h1>
+            <p><strong>How Can We Help You?</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta, labore blanditiis earum laudantium ratione provident cum incidunt quis quia facere quo voluptas, molestias est libero fugiat harum veritatis eveniet cumque, dignissimos consectetur ab explicabo. Reprehenderit eius quam sint nisi. Tenetur sequi incidunt dignissimos necessitatibus aperiam odio rerum vitae? Ducimus quas libero odio labore molestias cum facilis ut fugit quasi.</p>
+            <div class="contact-child-controller">
+          <div class="main-contact-data">
+            <div class="contact-form">
+              <!-- -------------------------------Form Start------------------------------------------- -->
+              <form action="" method="post" class="mt-1">
+                <div class="full-name">
+                  <input type="text" name="full_name" id="" class="full-name-input" required placeholder="Enter Your Full Name">
+                </div>
+                <div class="email-cont">
+                  <input type="email" name="email_cont" id="" class="email-cont-input" required placeholder="Enter Your Email Here">
+                </div>
+                <div class="message">
+                  <textarea name="message" id="" cols="30" rows="11" placeholder="Message..." required></textarea>
+                </div>
+                <div class="button">
+                  <button type="submit" class="bg-custom button-text" value="submit" name="submit">Send</button>
+                </div>
+              </form>
+              <!-- =================Form End===================== -->
+            </div>
+          </div>
+          <!-- <?php
+          if (isset($_POST['submit'])) {
+            $contact_detail = array($_POST['full_name'], $_POST['email_cont'], $_POST['message']);
+            $query = "INSERT INTO contact_us(full_name, email, message)
+                VALUES('{$contact_detail[0]}','{$contact_detail[1]}','{$contact_detail[2]}')";
+            $result = mysqli_query($conn, $query) or die("INSERTION FAILD");
+            $finalMessage = wordwrap($contact_detail[2], 70);
+            mail("hassaanmalick2001@gmail.com", "Via PackTrack Contact Us:", $finalMessage);
+          }
+          ?> -->
+          <!-- Location Part Main -->
+          <div class="location">
+            <div class="responsive-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6639.0474975969155!2d73.00856932386962!3d33.69539399921819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbe6b3168b499%3A0xf1c45770d2ab2a5b!2sF-10%20Markaz%20F-10%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1671385952010!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+
+
+    <footer class="py-4 bg-light-ft gtco-testimonials gtco-footer">
+        <div class="text-center p-3">
+            <a class="bg-light-ft" href="">©</a> 2023 Copyright:
+            <a class="bg-light-ft" href="">Royal Shipment</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
